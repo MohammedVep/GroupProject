@@ -152,6 +152,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6T-dS-wa2">
+                                <rect key="frame" x="38" y="327" width="106" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add Group"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9Fa-QX-ILg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -235,9 +241,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lKE-IK-jNH"/>
+        <segue reference="Sid-vG-xvK"/>
         <segue reference="e9c-Jp-CrC"/>
-        <segue reference="R4c-ya-cQW"/>
+        <segue reference="adG-YR-vWg"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
