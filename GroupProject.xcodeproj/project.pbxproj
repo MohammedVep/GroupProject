@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B8B4BECE29CE826000C226F9 /* GroupProject.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = GroupProject.xctestplan; path = GroupProject.xcodeproj/GroupProject.xctestplan; sourceTree = "<group>"; };
 		B8DA9D2C29A01A6D00C077CB /* GroupProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8DA9D2F29A01A6D00C077CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8DA9D3129A01A6D00C077CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +41,7 @@
 		B8DA9D2329A01A6D00C077CB = {
 			isa = PBXGroup;
 			children = (
+				B8B4BECE29CE826000C226F9 /* GroupProject.xctestplan */,
 				B8DA9D2E29A01A6D00C077CB /* GroupProject */,
 				B8DA9D2D29A01A6D00C077CB /* Products */,
 			);

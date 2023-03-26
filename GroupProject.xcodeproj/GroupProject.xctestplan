@@ -1,0 +1,23 @@
+{
+  "configurations" : [
+    {
+      "id" : "564FA67F-4873-46F6-9220-0E230B3781BD",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:GroupProject.xcodeproj",
+      "identifier" : "B8DA9D2B29A01A6D00C077CB",
+      "name" : "GroupProject"
+    }
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}
