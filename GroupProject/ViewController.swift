@@ -10,21 +10,21 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    @IBOutlet weak var shoppingView: UITableView!
     @IBOutlet weak var PriceA: UITextField!
     @IBOutlet weak var PriceB: UITextField!
     @IBOutlet weak var PriceC: UITextField!
-    @IBOutlet weak var SubTotal: UILabel!
-    @IBOutlet weak var Tax: UILabel!
-    @IBOutlet weak var Total: UILabel!
+    @IBOutlet weak var subTotalField: UILabel!
+
+    @IBOutlet weak var taxField: UILabel!
+
+    @IBOutlet weak var totalField: UILabel!
     @IBOutlet weak var categoryName: UILabel!
     @IBOutlet weak var ItemA: UITextField!
     @IBOutlet weak var ItemB: UITextField!
     @IBOutlet weak var ItemC: UITextField!
+    @IBOutlet weak var tableView: UITableView!
     
-    
-    @IBAction func DeleteGroup(_ sender: Any) {
-        categoryName.text = String("-")
-    }
     
     @IBAction func Calculate(_ sender: Any) {
         guard
@@ -40,9 +40,9 @@ class ViewController: UIViewController {
         let formatter = NumberFormatter()
         
         formatter.numberStyle = .decimal
-        Tax.text = formatter.string(from: NSNumber(value: tax))
-        SubTotal.text = formatter.string(from: NSNumber(value: subtotal))
-        Total.text = formatter.string(from: NSNumber(value: total))
+        taxField.text = formatter.string(from: NSNumber(value: tax))
+        subTotalField.text = formatter.string(from: NSNumber(value: subtotal))
+        totalField.text = formatter.string(from: NSNumber(value: total))
         
     }
     
@@ -53,17 +53,36 @@ class ViewController: UIViewController {
         ItemA.text = String("-")
         ItemB.text = String("-")
         ItemC.text = String("-")
-        Total.text = String("-")
-        SubTotal.text = String("-")
-        Tax.text = String("-")
+        totalField.text = String("-")
+        subTotalField.text = String("-")
+        taxField.text = String("-")
     }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+//        shoppingView.delegate = self
+//        shoppingView.dataSource = self
     }
 
 
 }
+//extension ViewController : UITableViewDelegate{
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return UITableView.automaticDimension
+//    }
+//}
+//
+//
+//extension  ViewController : UITableViewDataSource{
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return 5
+//    }
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell") ?? UITableViewCell()
+//        return cell
+//    }
+//}
 
