@@ -3,14 +3,17 @@
 //  GroupProject
 //
 //  Created by Mohammed Vepari on 2023-04-15.
-//
+// ID: 101345468
 
 import Foundation
 
 class GroupsModel : GroupsProtocol {
+    // Makes group model shared
     static var shared = GroupsModel.init()
     private init(){}
+    // Assigns groups to a groupmodel array
     var groups: [GroupModel] = []
+    // Assigns Groupnames with a string array of names and for loop that appends group in group name
     var groupNames: [String] {
         var names: [String] = []
         for group in groups {
@@ -18,15 +21,20 @@ class GroupsModel : GroupsProtocol {
         }
         return names
     }
+    
+    // Returns groups
     var groupCount: Int {
         return groups.count
     }
+    
+    // Adds group
     func addGroup(groupName: String) {
         let newGroup = GroupModel(name: groupName)
         
         groups.append(newGroup)
     }
     
+    // Add item and string to the group
     func add(item: String, groupName: String) {
         var existingGroup = get(groupName: groupName)
         if let existingGroup = existingGroup {
@@ -37,7 +45,7 @@ class GroupsModel : GroupsProtocol {
             groups.append(newGroup)
         }
     }
-    
+    // finds number of items inside a group
     func numberOfItemsIn(groupName: String) -> Int {
         if let group = get(groupName: groupName) {
             return group.items.count
@@ -45,7 +53,7 @@ class GroupsModel : GroupsProtocol {
             return 0
         }
     }
-    
+    // returns items in the each group
     func getItemsFor(groupName: String) -> [String] {
         if let group = get(groupName: groupName) {
             return group.items
@@ -53,6 +61,7 @@ class GroupsModel : GroupsProtocol {
             return []
         }
     }
+    // returns item from specific group
     func get(itemNumber: Int, groupName: String) -> String? {
         if let group = get(groupName: groupName) {
             if itemNumber < 0 || itemNumber >= group.items.count {
@@ -65,6 +74,7 @@ class GroupsModel : GroupsProtocol {
         }
     }
     
+    // returns group
     func get(groupName: String) -> GroupModel? {
         var existingGroup: GroupModel?
         for thisGroup in groups {
@@ -74,7 +84,7 @@ class GroupsModel : GroupsProtocol {
         }
         return existingGroup
     }
-    
+    // returns group by number
     func get(groupNumber: Int) -> GroupModel? {
         if groupNumber < 0 || groupNumber >= groups.count {
             return nil
@@ -82,10 +92,11 @@ class GroupsModel : GroupsProtocol {
         let group = groups[groupNumber]
         return group
     }
-    
+    // Removes all groups
     func removeAll(){
         groups.removeAll()
     }
+    // gets group name by number
     func getGroupName(index: Int) -> String?{
         if index < 0 || index >= groups.count {
             return nil
@@ -93,6 +104,7 @@ class GroupsModel : GroupsProtocol {
         let group = groups[index]
         return group.groupName
     }
+    // deletes group by number 
     func deleteGroupAt(index: Int) {
         if index < 0 || index >= groups.count {
             return

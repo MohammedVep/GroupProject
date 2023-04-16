@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Creates a group protocol which stores group names into lists
 protocol GroupsProtocol{
     var groupNames: [String] { get  }
     var groupCount: Int { get }
