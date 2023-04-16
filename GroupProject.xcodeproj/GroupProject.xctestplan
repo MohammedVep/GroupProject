@@ -17,7 +17,13 @@
     }
   },
   "testTargets" : [
-
+    {
+      "target" : {
+        "containerPath" : "container:GroupProject.xcodeproj",
+        "identifier" : "B89E3CFA29EC5AFE005FB4C7",
+        "name" : "GroupProjectTests"
+      }
+    }
   ],
   "version" : 1
 }

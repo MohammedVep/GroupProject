@@ -8,16 +8,29 @@
 import UIKit
 
 class ManageGroupsViewController: UIViewController {
-    var model : GroupProtocol = Group()
+    var model : GroupsProtocol = GroupsModel.shared
     
     
     @IBOutlet weak var groupNameField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     
-    @IBAction func AddGroupButton(_ sender: UIButton) {
+    @IBAction func didTapAddGroup(_ sender: UIButton) {
+        if let groupName = groupNameField.text {
+            model.addGroup(groupName: groupName)
+            tableView.reloadData()
+            groupNameField.text = ""
+        }
+        
     }
     
-    @IBAction func DeleteGroupButton(_ sender: Any) {
+    @IBAction func didTapDeleteGroup(_ sender: Any) {
+        guard let indexPath = tableView.indexPathForSelectedRow else {
+            return
+        }
+        let section = indexPath.section
+        model.deleteGroupAt(index: section)
+        tableView.reloadData()
+        
     }
     
     override func viewDidLoad() {

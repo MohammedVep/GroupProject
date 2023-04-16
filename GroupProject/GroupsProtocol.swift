@@ -7,7 +7,10 @@
 
 import Foundation
 
-protocol GroupProtocol{
+protocol GroupsProtocol{
     var groupNames: [String] { get  }
     var groupCount: Int { get }
+    func addGroup(groupName: String)
+    func getGroupName(index: Int) -> String?
+    func deleteGroupAt(index: Int)
 }
