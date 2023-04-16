@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Model : ModelProtocol {
+class Group : GroupProtocol {
     var groups: [String] = ["apple", "banana", "cherry"]
     var groupNames: [String] {
         return groups

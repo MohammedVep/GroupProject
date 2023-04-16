@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ModelProtocol{
+protocol GroupProtocol{
     var groupNames: [String] { get  }
     var groupCount: Int { get }
 }

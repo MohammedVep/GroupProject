@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var ItemA: UITextField!
     @IBOutlet weak var ItemB: UITextField!
     @IBOutlet weak var ItemC: UITextField!
-    @IBOutlet weak var tableView: UITableView!
+
     
     
     @IBAction func Calculate(_ sender: Any) {
@@ -63,26 +63,26 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-//        shoppingView.delegate = self
-//        shoppingView.dataSource = self
+        shoppingView.delegate = self
+        shoppingView.dataSource = self
     }
 
 
 }
-//extension ViewController : UITableViewDelegate{
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return UITableView.automaticDimension
-//    }
-//}
-//
-//
-//extension  ViewController : UITableViewDataSource{
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 5
-//    }
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell") ?? UITableViewCell()
-//        return cell
-//    }
-//}
+extension ViewController : UITableViewDelegate{
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+}
+
+
+extension  ViewController : UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell") ?? UITableViewCell()
+        return cell
+    }
+}
 

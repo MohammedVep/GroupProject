@@ -8,7 +8,7 @@
 import UIKit
 
 class ManageGroupsViewController: UIViewController {
-    var model : ModelProtocol = Model()
+    var model : GroupProtocol = Group()
     
     
     @IBOutlet weak var groupNameField: UITextField!

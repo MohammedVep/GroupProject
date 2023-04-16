@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		B89E3CEC29EB76FA005FB4C7 /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89E3CEB29EB76FA005FB4C7 /* ShoppingItem.swift */; };
 		B89E3CEE29EB8638005FB4C7 /* ManageGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89E3CED29EB8638005FB4C7 /* ManageGroupsViewController.swift */; };
-		B89E3CF029EB8AAB005FB4C7 /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89E3CEF29EB8AAB005FB4C7 /* ModelProtocol.swift */; };
-		B89E3CF229EB8B66005FB4C7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89E3CF129EB8B66005FB4C7 /* Model.swift */; };
+		B89E3CF029EB8AAB005FB4C7 /* GroupProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89E3CEF29EB8AAB005FB4C7 /* GroupProtocol.swift */; };
+		B89E3CF229EB8B66005FB4C7 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89E3CF129EB8B66005FB4C7 /* Group.swift */; };
 		B8DA9D3029A01A6D00C077CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DA9D2F29A01A6D00C077CB /* AppDelegate.swift */; };
 		B8DA9D3229A01A6D00C077CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DA9D3129A01A6D00C077CB /* SceneDelegate.swift */; };
 		B8DA9D3429A01A6D00C077CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DA9D3329A01A6D00C077CB /* ViewController.swift */; };
@@ -22,8 +22,8 @@
 /* Begin PBXFileReference section */
 		B89E3CEB29EB76FA005FB4C7 /* ShoppingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
 		B89E3CED29EB8638005FB4C7 /* ManageGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageGroupsViewController.swift; sourceTree = "<group>"; };
-		B89E3CEF29EB8AAB005FB4C7 /* ModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProtocol.swift; sourceTree = "<group>"; };
-		B89E3CF129EB8B66005FB4C7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B89E3CEF29EB8AAB005FB4C7 /* GroupProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupProtocol.swift; sourceTree = "<group>"; };
+		B89E3CF129EB8B66005FB4C7 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		B8B4BECE29CE826000C226F9 /* GroupProject.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = GroupProject.xctestplan; path = GroupProject.xcodeproj/GroupProject.xctestplan; sourceTree = "<group>"; };
 		B8DA9D2C29A01A6D00C077CB /* GroupProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8DA9D2F29A01A6D00C077CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,8 +75,8 @@
 				B8DA9D3D29A01A6F00C077CB /* Info.plist */,
 				B89E3CEB29EB76FA005FB4C7 /* ShoppingItem.swift */,
 				B89E3CED29EB8638005FB4C7 /* ManageGroupsViewController.swift */,
-				B89E3CEF29EB8AAB005FB4C7 /* ModelProtocol.swift */,
-				B89E3CF129EB8B66005FB4C7 /* Model.swift */,
+				B89E3CEF29EB8AAB005FB4C7 /* GroupProtocol.swift */,
+				B89E3CF129EB8B66005FB4C7 /* Group.swift */,
 			);
 			path = GroupProject;
 			sourceTree = "<group>";
@@ -152,9 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B89E3CF229EB8B66005FB4C7 /* Model.swift in Sources */,
+				B89E3CF229EB8B66005FB4C7 /* Group.swift in Sources */,
 				B89E3CEC29EB76FA005FB4C7 /* ShoppingItem.swift in Sources */,
-				B89E3CF029EB8AAB005FB4C7 /* ModelProtocol.swift in Sources */,
+				B89E3CF029EB8AAB005FB4C7 /* GroupProtocol.swift in Sources */,
 				B8DA9D3429A01A6D00C077CB /* ViewController.swift in Sources */,
 				B89E3CEE29EB8638005FB4C7 /* ManageGroupsViewController.swift in Sources */,
 				B8DA9D3029A01A6D00C077CB /* AppDelegate.swift in Sources */,
