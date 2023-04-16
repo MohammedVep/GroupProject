@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B89E3CEC29EB76FA005FB4C7 /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89E3CEB29EB76FA005FB4C7 /* ShoppingItem.swift */; };
 		B89E3CEE29EB8638005FB4C7 /* ManageGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89E3CED29EB8638005FB4C7 /* ManageGroupsViewController.swift */; };
 		B89E3CF029EB8AAB005FB4C7 /* GroupsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89E3CEF29EB8AAB005FB4C7 /* GroupsProtocol.swift */; };
 		B89E3CF229EB8B66005FB4C7 /* GroupsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89E3CF129EB8B66005FB4C7 /* GroupsModel.swift */; };
@@ -35,7 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B89E3CEB29EB76FA005FB4C7 /* ShoppingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
 		B89E3CED29EB8638005FB4C7 /* ManageGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageGroupsViewController.swift; sourceTree = "<group>"; };
 		B89E3CEF29EB8AAB005FB4C7 /* GroupsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsProtocol.swift; sourceTree = "<group>"; };
 		B89E3CF129EB8B66005FB4C7 /* GroupsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsModel.swift; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 				B8DA9D3829A01A6F00C077CB /* Assets.xcassets */,
 				B8DA9D3A29A01A6F00C077CB /* LaunchScreen.storyboard */,
 				B8DA9D3D29A01A6F00C077CB /* Info.plist */,
-				B89E3CEB29EB76FA005FB4C7 /* ShoppingItem.swift */,
 				B89E3CED29EB8638005FB4C7 /* ManageGroupsViewController.swift */,
 				B89E3CEF29EB8AAB005FB4C7 /* GroupsProtocol.swift */,
 				B89E3CF129EB8B66005FB4C7 /* GroupsModel.swift */,
@@ -231,7 +228,6 @@
 			files = (
 				B89E3CF229EB8B66005FB4C7 /* GroupsModel.swift in Sources */,
 				B89E3D0829EC5F30005FB4C7 /* GroupModel.swift in Sources */,
-				B89E3CEC29EB76FA005FB4C7 /* ShoppingItem.swift in Sources */,
 				B89E3CF029EB8AAB005FB4C7 /* GroupsProtocol.swift in Sources */,
 				B8DA9D3429A01A6D00C077CB /* ViewController.swift in Sources */,
 				B89E3CEE29EB8638005FB4C7 /* ManageGroupsViewController.swift in Sources */,

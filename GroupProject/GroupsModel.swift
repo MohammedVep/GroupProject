@@ -5,6 +5,12 @@
 //  Created by Mohammed Vepari on 2023-04-15.
 // ID: 101345468
 
+// Ibrahim Elmi - 101241704
+// Abdur Rahman Fahad - 101295960
+//
+//Mohammed Abdiwahab Hussein - 101308661
+
+
 import Foundation
 
 class GroupsModel : GroupsProtocol {
@@ -36,7 +42,7 @@ class GroupsModel : GroupsProtocol {
     
     // Add item and string to the group
     func add(item: String, groupName: String) {
-        var existingGroup = get(groupName: groupName)
+        let existingGroup = get(groupName: groupName)
         if let existingGroup = existingGroup {
             existingGroup.items.append(item)
         } else {
